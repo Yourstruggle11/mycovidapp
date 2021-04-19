@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid Live Update</title>
+</head>
+
+<body>
+    <main>
+        <h1>INDIA</h1>
+        <div class="total_active">
+            <div class="active">
+                <h1>Active Cases</h1>
+                <h1 id="Active">0</h1>
+            </div>
+        </div>
+        <div class="update_section">
+            <div class="case_card">
+                <div class="total_confirm">
+                    <h2 style="color: aqua; text-shadow: 0 0 10px rgb(190, 190, 240), 0 0 10px white;">total confirm</h2>
+                    <h2 id="total_confirm_cases">0</h2>
+                    <h5 id="confirm_within_24hr">0+</h5>
+                </div>
+            </div>
+            <div class="case_card">
+                <div class="total_death">
+                    <h2 style="color: red; text-shadow: 0 0 10px rgb(190, 190, 240), 0 0 10px white;">Deaths</h2>
+                    <h2 id="total_death_cases">0</h2>
+                    <h5 id="death_within_24hr">0+</h5>
+                </div>
+            </div>
+            <div class="case_card">
+                <div class="total_recover">
+                    <h2 style="color: green; text-shadow: 0 0 10px green, 0 0 10px green;">recover</h2>
+                    <h2 id="total_recover_cases" style="color: white;">0</h2>
+                    <h5 id="recover_within_24hr">0+</h5>
+                </div>
+            </div>
+        </div>
+        <div class="MyChart">
+            <canvas id="chart1" style="width: 100%; height: 50%;"></canvas>
+            <canvas id="chart2" style="width: 100%; height: 50%;"></canvas>
+        </div>
+    </main>
+    <footer style="padding-bottom: 20px;">
+        <h1 style="text-align: center; color: #f9f3f3;">Made With <span style="color: red;"> ❤</span> by <span style="font-family: 'Lobster', cursive; color: #f8f1f1;">SOUVIK SEN</span> </h1>
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="covid_app_codes.js"></script>
+</body>
+
+</html>
