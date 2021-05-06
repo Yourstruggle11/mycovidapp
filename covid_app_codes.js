@@ -1,3 +1,9 @@
+//Hello there i m souvik,
+ //Welcome to my world of coding this is my pleasure that you are watching and observing my code
+ //But remember don't try to do anything wrong with the code it took my sweat and one more thing feel free to suggest any improvements
+
+
+
 const url = "https://api.covid19india.org/data.json";
 
 fetch(url)
